@@ -1,0 +1,369 @@
+body {
+    background-color: #a0a0a0;
+}
+
+.Background {
+    background-image: url('images/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 100vh; /* Makes the background cover the full viewport height */
+}
+
+
+/* General Navbar styles */
+.Navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    padding: 10px 20px; /* Spacing around the Navbar */
+}
+
+/* Navbar button styles */
+.nav-button {
+    display: inline-block;
+    text-decoration: none; /* Removes underline */
+    color: rgb(0, 0, 0); /* Button text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Center-aligns text */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+
+/* Hover effect for buttons */
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow on hover */
+}
+
+/* Active link styling (optional) */
+.nav-button.active {
+    background-color: #0056b3; /* Same as hover */
+    font-weight: bold; /* Makes the active link stand out */
+}
+
+/* Responsive Navbar: Stack links on smaller screens */
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center-align the links */
+    }
+
+    .nav-button {
+        width: 80%; /* Buttons stretch to 80% of the container width */
+    }
+}
+
+
+#Typing_Video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -5; /* Video at the bottom layer */
+}
+
+
+#Contact img {
+    width: 90%; /* 1/6th of the webpage width */
+    float: left; /* Positions the image to the left */
+    margin-right: 20px; /* Adds spacing between the image and the form */
+    border: 2px solid #000000; /* 2-pixel border */
+    box-sizing: border-box; /* Includes border in width calculation */
+}
+
+
+/* Video and Text Section Container */
+.VideoTextContainer {
+    display: flex; /* Arranges video and text side by side */
+    flex-wrap: wrap; /* Ensures wrapping for smaller screens */
+    justify-content: space-between; /* Adds space between columns */
+    align-items: center; /* Centers content vertically */
+    padding: 20px; /* Padding around the container */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    gap: 20px; /* Adds space between video and text */
+}
+
+/* Video Styling */
+.VideoContainer {
+    flex: 1; /* Takes equal space as the text */
+    max-width: 500px; /* Limits video size */
+    display: flex;
+    justify-content: center; /* Centers video horizontally */
+    align-items: center;
+}
+
+.VideoContainer iframe {
+    width: 100%; /* Makes the video responsive */
+    aspect-ratio: 16/9; /* Maintains 16:9 aspect ratio */
+    border-radius: 8px; /* Rounded corners for the video */
+    border: none; /* Removes default border */
+}
+
+/* Text Styling */
+.TextContainer {
+    flex: 1; /* Takes equal space as the video */
+    padding: 20px;
+}
+
+.TextContainer h1 {
+    font-size: 2em; /* Large and bold heading */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.TextContainer p {
+    font-size: 1em; /* Comfortable font size */
+    line-height: 1.6; /* Improves readability */
+    color: #000000; /* Softer text color */
+    text-align: left;
+}
+
+
+
+/* About section container */
+.AboutContainer {
+    display: flex; /* Ensures side-by-side layout */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between; /* Space between image and text */
+    align-items: center; /* Vertically centers the content */
+    padding: 20px; /* Adds padding around the container */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #7c7c7c; /* 2-pixel border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    gap: 20px; /* Space between columns */
+}
+
+/* Left column styling */
+.AboutImage {
+    flex: 1; /* Takes equal space as the text */
+    max-width: 400px; /* Prevents image from being too large */
+    display: flex; /* Ensures proper alignment */
+    justify-content: center; /* Centers image horizontally */
+}
+
+.AboutImage img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #000000; /* 2-pixel border */
+}
+
+/* Right column styling */
+.AboutContent {
+    flex: 2; /* Gives more space to text compared to the image */
+    padding: 20px; /* Adds spacing around text */
+}
+
+.AboutContent h1 {
+    font-size: 2em; /* Large heading size */
+    margin-bottom: 10px;
+}
+
+.AboutContent p {
+    font-size: 1em; /* Comfortable font size */
+    line-height: 1.6; /* Improves readability */
+}
+
+
+
+/* GitHub Section Container */
+.GitHubContainer {
+    display: flex; /* Side-by-side layout */
+    flex-wrap: wrap; /* Stacks content on smaller screens */
+    justify-content: space-between; /* Adds space between columns */
+    align-items: center; /* Vertically aligns the content */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    gap: 20px; /* Adds spacing between text and image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Left Column Styling */
+.GitHubText {
+    flex: 1; /* Takes up equal space as the image */
+    max-width: 600px; /* Prevents the text from becoming too wide */
+    padding: 10px;
+}
+
+.GitHubText h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333; /* Darker text for better contrast */
+}
+
+.GitHubText p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555; /* Softer text color */
+}
+
+.GitHubLink {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.GitHubLink:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Right Column Styling */
+.GitHubImage {
+    flex: 1; /* Takes up equal space as the text */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;
+}
+
+.GitHubImage img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 300px; /* Limits maximum image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.GitHubImage img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+
+
+
+/* Contact section layout */
+.Row {
+    display: flex;
+    flex-wrap: wrap;  /* Allows columns to wrap on smaller screens */
+    justify-content: center;  /* Centers the content */
+    align-items: center;  /* Vertically aligns the items */
+    gap: 20px;  /* Adds space between columns */
+    padding: 20px;
+}
+
+/* Contact image styling */
+.Column_2 {
+    flex: 1;  /* Takes equal space as the form */
+    max-width: 100%;  /* Ensures image doesn't overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ContactImage {
+    width: auto;  /* Makes the image responsive */
+    #max-width: 500px;  /* Sets a max width */
+    height: auto;  /* Keeps the aspect ratio */
+    border-radius: 8px;  /* Rounded corners */
+}
+
+/* Contact form styling */
+.Column_1 {
+    flex: 1;  /* Takes equal space as the image */
+    max-width: 100%;  /* Ensures form doesn't overflow */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    background-color: #f8f9fa;  /* Light background */
+    border-radius: 8px;  /* Rounded corners */
+    border: 2px solid #7c7c7c; /* 2-pixel border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Light shadow */
+}
+
+/* Form label styling */
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and textarea fields styling */
+form input, form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for textarea */
+form textarea {
+    resize: vertical;  /* Allows resizing vertically */
+    height: 100px;  /* Sets a fixed height */
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;  /* Darkens on hover */
+}
+
+
+
+
+/* Style the social media buttons */
+.social-links {
+    text-align: center; /* Centers the buttons */
+    margin-bottom: 20px;
+}
+
+.social-button {
+    color: rgb(0, 0, 0); /* Text color */
+    text-decoration: none; /* Removes underline */
+    border: 2px solid rgb(0, 0, 0); /* Border around the button */
+    padding: 10px 10px; /* Padding for the button */
+    margin: 0 10px; /* Adds space between the buttons */
+    display: inline-block; /* Aligns buttons horizontally */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect: glow animation */
+.social-button:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White glow effect */
+    background-color: rgba(0, 0, 0, 0.1); /* Slight dark background on hover */
+}
+
+/* Optional: Animation effect on button click (glow effect) */
+.social-button:active {
+    animation: glow 1s ease-in-out infinite; /* Glow effect when clicked */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+}
