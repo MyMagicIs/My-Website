@@ -79,7 +79,7 @@ body {
 
 /* Video and Text Section Container */
 .VideoTextContainer {
-    display: flex; /* Arranges video and text side by side */
+
     flex-wrap: wrap; /* Ensures wrapping for smaller screens */
     justify-content: space-between; /* Adds space between columns */
     align-items: center; /* Centers content vertically */
@@ -91,7 +91,7 @@ body {
 
 /* Video Styling */
 .VideoContainer {
-    flex: 1; /* Takes equal space as the text */
+
     max-width: 500px; /* Limits video size */
     display: flex;
     justify-content: center; /* Centers video horizontally */
