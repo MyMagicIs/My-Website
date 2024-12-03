@@ -1,1 +1,157 @@
-Create index.html for my-project GitHub Pages
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>AnujShelke</title>
+        <link rel="stylesheet" href="css/portfolio.css">
+    </head>
+    <body class="Background">
+        
+        <!-- Header/Navbar -->
+        <header class="Navbar">
+            <a href="#Home" class="nav-button" role="button">Home</a>
+            <a href="#About" class="nav-button" role="button">About</a>
+            <a href="#GitHub" class="nav-button" role="button">GitHub</a>
+            <a href="#Contact" class="nav-button" role="button">Contact</a>
+        </header>
+        <br><br>
+        <br><br>
+
+        <!-- Background Video Section -->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video" aria-label="Background video of typing on a keyboard.">
+                <source src="images/video/Typing.mp4" type="video/mp4">
+                <source src="images/video/Typing.webm" type="video/webm">
+                <!-- Fallback Message -->
+                Your browser does not support HTML5 video. Please <a href="images/video/Typing.mp4" download>download the video</a> to view it.
+
+            </video>
+        </div>
+
+        <!-- Video and Text Section -->
+        <div class="VideoTextContainer">
+            <!-- Left column with video -->
+            <div class="VideoContainer">
+                <iframe
+                Your browser does not support HTML5 video. Please 
+                src="images/video/Typing.mp4" download>download the video</a> to view it.
+                    title="Introduction Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Right column with text -->
+            <div class="TextContainer">
+                <h1 class="white-text">Anuj's Portfolio</h1>
+                <strong>
+                    <p class="center">
+                        <q>The best way to predict the future is to invent it.</q>
+                        <br> — Alan Kay
+                        <br><br> Hi, I’m Anuj Shelke, and welcome to my digital world!
+                        <br>This is where you’ll get to know my journey, my skills, and the experiences that shape the work I do. 
+                        <br>Whether you're here to explore my projects or learn more about my story, I’m thrilled you stopped by.
+                        <br><br> Dive in, take a look around, and let’s make something amazing together!
+                    </p>
+                </strong>
+            </div>
+        </div>
+        <br><br>
+        <br><br>
+
+
+        <!-- About section -->
+        <div class="AboutContainer" id="About">
+            <!-- Left column with image -->
+            <div class="AboutImage">
+                <img src="images/about_me.jpg" alt="An image representing my journey as a developer">
+            </div>
+
+            <!-- Right column with text content -->
+            <div class="AboutContent">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I'm a passionate software developer who loves solving problems through code. When I'm not coding, I enjoy spending quality time with my kid and reading new books.  
+                    <br><br>
+                    I graduated from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp. Over the years, I've honed my skills in web development and am proficient in technologies like HTML, CSS, JavaScript, SQL, and C++ and more.
+                    <br><br>
+                    As a full-stack developer, I'm eager to collaborate on exciting projects and help bring your ideas to life. Feel free to <a href="#Contact">reach out to me</a> below—I'd love to connect!
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+        <br><br>
+
+
+        <!-- GitHub Section -->
+        <div class="GitHubContainer" id="GitHub">
+            <!-- Left column with text -->
+            <div class="GitHubText">
+                <h1>GitHub</h1>
+                <p>
+                    Explore my coding projects and contributions on my GitHub profile:
+                </p>
+                <p>
+                    <a href="https://github.com/MyMagicIs" target="_blank" class="GitHubLink">Visit The Tech Academy GitHub</a>
+                </p>
+            </div>
+
+            <!-- Right column with image -->
+            <div class="GitHubImage">
+                <a href="https://github.com/MyMagicIs" target="_blank">
+                    <img src="images/GitHub.png" alt="GitHub Logo">
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- Contact section -->
+        <div class="Row" id="Contact">
+            <!-- Contact image, left column -->
+            <div class="Column_2 Column_tall">
+                <img src="images/contact_image.jpg" alt="Contact Image" id="ContactImage">
+            </div>
+            
+            <!-- Contact form, right column -->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <form action="" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    <br><br>
+
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+
+<!-- Footer section -->
+<footer>
+    <div class="social-links">
+        <a href="https://www.instagram.com" class="social-button" target="_blank" role="button">Instagram</a>
+        <a href="https://www.facebook.com" class="social-button" target="_blank" role="button">Facebook</a>
+        <a href="https://www.twitter.com" class="social-button" target="_blank" role="button">Twitter</a>
+    </div>
+
+    <p class="center">&copy; Prosper Consulting Inc., <a href="https://www.AnujShelke.com/" target="_blank">Anuj Shelke</a></p>
+</footer>
+
+
+
+
+    </body>
+</html>
+    
