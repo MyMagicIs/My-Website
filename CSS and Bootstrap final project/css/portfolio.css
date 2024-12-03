@@ -13,7 +13,7 @@ body {
 
 /* General Navbar styles */
 .Navbar {
-    display: flex;
+
     justify-content: center;
     gap: 15px; /* Space between buttons */
     padding: 10px 20px; /* Spacing around the Navbar */
